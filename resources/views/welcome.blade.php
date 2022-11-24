@@ -36,6 +36,8 @@
                     </div>
                     <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
                         <!-- Pricing Card -->
+                        <?php //dd($pakets)?>
+                        @foreach ($pakets as $paket)
                         <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                             <h3 class="mb-4 text-2xl font-semibold">Paket Basic</h3>
                             <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Paket Dasar</p>
@@ -44,32 +46,11 @@
                                 <span class="text-gray-500 dark:text-gray-400">/bulan</span>
                             </div>
                             <!-- List -->
-                            
                             <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get started</a>
                         </div>
-                        <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                            <h3 class="mb-4 text-2xl font-semibold">Paket Middle </h3>
-                            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Paket Menengah</p>
-                            <div class="flex justify-center items-baseline my-8">
-                                <span class="mr-2 text-4xl font-extrabold">Rp 130.000</span>
-                                <span class="text-gray-500 dark:text-gray-400">/bulan</span>
-                            </div>
-                            <!-- List -->
-                            
-                            <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get started</a>
-                        </div>
-
-                        <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                            <h3 class="mb-4 text-2xl font-semibold">Paket Advance </h3>
-                            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Paket Pro</p>
-                            <div class="flex justify-center items-baseline my-8">
-                                <span class="mr-2 text-4xl font-extrabold">Rp 250.000</span>
-                                <span class="text-gray-500 dark:text-gray-400">/bulan</span>
-                            </div>
-                            <!-- List -->
-                            
-                            <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get started</a>
-                        </div>
+                        
+                        @endforeach
+                       
                     </div>
                 </div>
             </div>
